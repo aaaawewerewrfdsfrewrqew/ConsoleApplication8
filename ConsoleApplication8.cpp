@@ -155,23 +155,23 @@ int main()
         for (int j = 0; j < cols; j++)
             arr[i][j] = c++;
 
-    cout << "Ïî÷àòêîâà ìàòðèöÿ:\n";
+    cout << "ÐŸÐ¾Ñ‡Ð°Ñ‚ÐºÐ¾Ð²Ð° Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ñ:\n";
     print(arr, rows, cols);
 
     add_column(arr, rows, cols);
-    cout << "\nÏ³ñëÿ äîäàâàííÿ ñòîâïöÿ:\n";
+    cout << "\nÐŸÑ–ÑÐ»Ñ Ð´Ð¾Ð´Ð°Ð²Ð°Ð½Ð½Ñ ÑÑ‚Ð¾Ð²Ð¿Ñ†Ñ:\n";
     print(arr, rows, cols);
 
     delete_column(arr, rows, cols, 1);
-    cout << "\nÏ³ñëÿ âèäàëåííÿ ñòîâïöÿ ¹1:\n";
+    cout << "\nÐŸÑ–ÑÐ»Ñ Ð²Ð¸Ð´Ð°Ð»ÐµÐ½Ð½Ñ ÑÑ‚Ð¾Ð²Ð¿Ñ†Ñ â„–1:\n";
     print(arr, rows, cols);
 
     shift_rows(arr, rows, cols, 1, true);
-    cout << "\nÏ³ñëÿ öèêë³÷íîãî çñóâó âïðàâî:\n";
+    cout << "\nÐŸÑ–ÑÐ»Ñ Ñ†Ð¸ÐºÐ»Ñ–Ñ‡Ð½Ð¾Ð³Ð¾ Ð·ÑÑƒÐ²Ñƒ Ð²Ð¿Ñ€Ð°Ð²Ð¾:\n";
     print(arr, rows, cols);
 
     int** tr = transpose(arr, rows, cols);
-    cout << "\nÒðàíñïîíîâàíà ìàòðèöÿ:\n";
+    cout << "\nÐ¢Ñ€Ð°Ð½ÑÐ¿Ð¾Ð½Ð¾Ð²Ð°Ð½Ð° Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ñ:\n";
     print(tr, cols, rows);
 
     int size = 3;
@@ -187,8 +187,8 @@ int main()
     names[2] = "Oleh";
     phones[2] = "789";
 
-    cout << "\nÏîøóê 'Petro': ³íäåêñ = " << find_by_name(names, size, "Petro") << endl;
-    cout << "Ïîøóê òåëåôîíó '789': ³íäåêñ = " << find_by_phone(phones, size, "789") << endl;
+    cout << "\nÐŸÐ¾ÑˆÑƒÐº 'Petro': Ñ–Ð½Ð´ÐµÐºÑ = " << find_by_name(names, size, "Petro") << endl;
+    cout << "ÐŸÐ¾ÑˆÑƒÐº Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½Ñƒ '789': Ñ–Ð½Ð´ÐµÐºÑ = " << find_by_phone(phones, size, "789") << endl;
 
     return 0;
 }
